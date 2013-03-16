@@ -3,6 +3,28 @@
 #
 #   Ensure the SQLite 3 gem is defined in your Gemfile
 #   gem 'sqlite3'
+
+#development:
+#adapter: postgresql
+#encoding: unicode
+#database: db/development.postgresql
+#pool: 5
+#timeout: 5000
+
+#test:
+#adapter: postgresql
+#encoding: unicode
+#database: db/test.postgresql
+#pool: 5
+#timeout: 5000
+
+#production:
+#adapter: postgresql
+encoding: unicode
+#database: db/production.postgresql
+#pool: 5
+#timeout: 5000
+
 development:
   adapter: sqlite3
   database: db/development.sqlite3
@@ -18,7 +40,7 @@ test:
   pool: 5
   timeout: 5000
 
-production:
+#production:
   adapter: sqlite3
   database: db/production.sqlite3
   pool: 5
