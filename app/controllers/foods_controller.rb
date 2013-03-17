@@ -11,7 +11,7 @@ class FoodsController < ApplicationController
 #							food.remove
 #			end
 #Food.destroy_all
-	for i in 103..104 do
+	for i in 1..100 do
 		food = Food.new()
 	#	food.update_attributes!(:id => 1)
 				#	food = Food.find(2)
