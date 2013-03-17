@@ -1,8 +1,10 @@
 First::Application.routes.draw do
-  resources :users
 
+  resources :as
+
+	root :to => 'foods#index'
+	match :foods  => 'foods#parser'
   resources :foods
-
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

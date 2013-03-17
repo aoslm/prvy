@@ -1,3 +1,3 @@
 class Food < ActiveRecord::Base
-  attr_accessible :name
+  attr_accessible :energy, :name, :name_eng
 end
