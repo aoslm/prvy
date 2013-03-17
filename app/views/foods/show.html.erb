@@ -1,23 +1,26 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <b>Name:</b>
+  <b>Slovak name:</b>
   <%= @food.name %>
 </p>
 
 
 <p>
-  <b>Name eng:</b>
+  <b>English name:</b>
   <%= @food.name_eng %>
 </p>
 
 
 <p>
-  <b>Energy:</b>
+  <b>Amount of energy [Kcal]:</b>
   <%= @food.energy %>
 </p>
 
 
-
-<%= link_to 'Edit', edit_food_path(@food) %> |
-<%= link_to 'Back', foods_path %>
+<div id="new">
+				<div class="link">
+								<%= link_to 'Edit', edit_food_path(@food) %></div>
+				<div class="link">
+								<%= link_to 'Back', foods_path %></div>
+</div>

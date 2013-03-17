@@ -1,6 +1,10 @@
 <h1>Editing food</h1>
 
-<%= render 'form' %>
 
-<%= link_to 'Show', @food %> |
-<%= link_to 'Back', foods_path %>
+<div id="new">
+				<div class="link">
+								<%= link_to 'Show', @food %></div>
+				<div class="link">
+								<%= link_to 'Back', foods_path %></div>
+</div>
+<%= render 'form' %>

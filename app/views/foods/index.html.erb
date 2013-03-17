@@ -1,16 +1,21 @@
 <h1>Listing foods</h1>
 
-<table>
-  <tr>
-    <th>Name</th>
-    <th></th>
-    <th>Name eng</th>
-    <th></th>
-    <th>Energy</th>
-    <th></th>
-    <th></th>
-    <th></th>
-    <th></th>
+
+<div id="new">
+				<div class="link"><%= link_to 'New Food', new_food_path %></div>
+				<div class="link"><%= link_to 'Get Data', foods_parser_path %></div>
+</div>
+<table>		 
+	<tr>
+    <th>Slovak name</th>
+		<th></th>
+		<th>English name</th>
+		<th></th>
+		<th>Energy [kcal]</th>
+		<th></th>
+		<th>Show details</th>
+    <th>Edit food</th>
+    <th>Destroy food</th>
   </tr>
 
 <% @foods.each do |food| %>
@@ -23,12 +28,10 @@
     <td><%=  %></td>
     <td><%= link_to 'Show', food %></td>
 		<td><%= link_to 'Edit', edit_food_path(food) %></td>
-		<td><%= link_to 'Parser', foods_parser_path(food) %></td> 
+		<!-- <td> link_to 'Parser', foods_parser_path(food) %><!--</td>-->
     <td><%= link_to 'Destroy', food, confirm: 'Are you sure?', method: :delete %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
-
-<%= link_to 'New Food', new_food_path %>
